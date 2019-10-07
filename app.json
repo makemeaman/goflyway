@@ -1,0 +1,32 @@
+{
+  "name": "goflyway-heroku",
+  "description": "deploy goflyway to Heroku.",
+  "keywords": ["goflyway"],
+  "env": {
+    "VER": {
+       "description": "输入 goflyway 版本号",
+       "value": "2.0.0rc1"
+     }, 
+     "KEY": {
+       "description": "密码，服务端与客户端需保持一致",
+       "value": "1b62ec8c-e504-4a50-9f90-2e646636d242"
+     },
+     "PORT": {
+       "description": "设置监听端口，该地址是客户端需要连接的端口",
+       "value": "45874"
+     },
+     "V2_Path": {
+        "description": "Path路径，默认/ray",
+        "value": "/ray"
+     },
+     "LEVEL": {
+       "description": "日志输出层级，有：dbg0，dbg，log，info，warn，err，off（关闭输出）",
+       "value": "log"
+     }
+  },
+  "website": "https://github.com/makemeaman/goflyway",
+  "repository": "https://github.com/makemeaman/goflyway",
+  "stack": "container"
+ }
+
+
